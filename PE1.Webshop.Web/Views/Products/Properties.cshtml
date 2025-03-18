@@ -1,0 +1,13 @@
+﻿@model IEnumerable<PE1.Webshop.Web.Entities.Property>
+
+@{
+    ViewData["Title"] = "Properties";
+}
+
+<h2>Properties</h2>
+<ul>
+    @foreach (var property in Model)
+    {
+        <li>@property.Name</li>
+    }
+</ul>

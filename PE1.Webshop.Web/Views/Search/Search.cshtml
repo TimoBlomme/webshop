@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Search";
+}
+
+<h2>Search</h2>
+
+<ul>
+    <li>
+        <a href="@Url.Action("Products", "Search", new { category = "Laptops", property = "High-End" })">
+            High-End Laptops
+        </a>
+    </li>
+    <li>
+        <a href="@Url.Action("Products", "Search", new { category = "Desktops", property = "Budget" })">
+            Budget Desktops
+        </a>
+    </li>
+    <li>
+        <a href="@Url.Action("Products", "Search", new { category = "Graphics Cards", property = "Gaming" })">
+            Gaming Graphics Cards
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<PE1.Webshop.Web.ViewModels.ProductViewModel>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h2>Products</h2>
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>
+            <img src="@product.ImageUrl" alt="@product.Name" width="100" />
+            <a href="@Url.Action("Details", "Products", new { id = product.Id })">
+                @product.Name - €@product.Price - @product.Category
+            </a>
+        </li>
+    }
+</ul>
