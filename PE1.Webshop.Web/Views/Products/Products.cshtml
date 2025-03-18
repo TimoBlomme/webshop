@@ -1,4 +1,6 @@
-﻿@model IEnumerable<PE1.Webshop.Web.ViewModels.ProductViewModel>
+﻿@using PE1.Webshop.Web.Enum
+@using PE1.Webshop.Web.ViewModels
+@model IEnumerable<PE1.Webshop.Web.ViewModels.ProductViewModel>
 
 @{
     ViewData["Title"] = "Products";
@@ -6,12 +8,12 @@
 
 <h2>Products</h2>
 <ul>
-    @foreach (var product in Model)
+    @foreach (ProductViewModel product in Model)
     {
         <li>
             <img src="@product.ImageUrl" alt="@product.Name" width="100" />
             <a href="@Url.Action("Details", "Products", new { id = product.Id })">
-                @product.Name - €@product.Price - @product.Category
+                @product.Name - €@product.Price - @product.Category.GetHumanName()
             </a>
         </li>
     }

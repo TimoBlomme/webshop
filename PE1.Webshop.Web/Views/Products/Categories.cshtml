@@ -1,4 +1,5 @@
-﻿@model IEnumerable<PE1.Webshop.Web.Enum.Category>
+﻿@using PE1.Webshop.Web.Enum
+@model IEnumerable<PE1.Webshop.Web.Enum.Category>
 
 @{
     ViewData["Title"] = "Categories";
@@ -8,6 +9,6 @@
 <ul>
     @foreach (var category in Model)
     {
-        <li>@category.ToString()</li>
+        <li>@category.GetHumanName()</li>
     }
 </ul>
