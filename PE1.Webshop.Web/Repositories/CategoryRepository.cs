@@ -10,9 +10,11 @@ namespace PE1.Webshop.Web.Repositories
     {
         private static readonly List<Category> _categories = new List<Category>
         {
-            Category.Laptops,
-            Category.Desktops,
-            Category.GraphicsCards
+            Category.Citrus,
+            Category.Berries,
+            Category.Pomes,
+            Category.StoneFruits,
+            Category.Tropical
         };
 
         public IEnumerable<Category> GetAll()

@@ -1,11 +1,10 @@
-﻿using Newtonsoft.Json.Linq;
-using PE1.Webshop.Web.Enum;
+﻿using PE1.Webshop.Web.Enum;
 using System.ComponentModel.DataAnnotations;
 
 namespace PE1.Webshop.Web.Entities
-{    
-        public class Product
-        {
+{
+    public class Product
+    {
         public int Id { get; set; }
 
         [Required]

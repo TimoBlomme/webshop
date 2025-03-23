@@ -6,6 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddSingleton<PropertyRepository>();
+
 builder.Services.AddScoped<ProductRepository>();
 
 var app = builder.Build();

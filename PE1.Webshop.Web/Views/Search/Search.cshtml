@@ -6,18 +6,47 @@
 
 <ul>
     <li>
-        <a href="@Url.Action("Products", "Search", new { category = "Laptops", property = "High-End" })">
-            High-End Laptops
+        <a href="@Url.Action("Products", "Search", new { category = "Citrus"})">
+            Citrus
         </a>
     </li>
     <li>
-        <a href="@Url.Action("Products", "Search", new { category = "Desktops", property = "Budget" })">
-            Budget Desktops
+        <a href="@Url.Action("Products", "Search", new { category = "Berries"})">
+            Berries
         </a>
     </li>
     <li>
-        <a href="@Url.Action("Products", "Search", new { category = "Graphics Cards", property = "Gaming" })">
-            Gaming Graphics Cards
+        <a href="@Url.Action("Products", "Search", new { category = "Tropical"})">
+            Tropical
+        </a>
+    </li>
+    <li>
+        <a href="@Url.Action("Products", "Search", new { category = "Stone Fruits"})">
+            Stone Fruits
+        </a>
+    </li>
+    <li>
+        <a href="@Url.Action("Products", "Search", new { category = "Pomes"})">
+            Pomes
+        </a>
+    </li>
+</ul>
+
+<h3>Predefined Searches</h3>
+<ul>
+    <li>
+        <a href="@Url.Action("TropicalJuicy", "Search")">
+            Tropical and juicy fruits 
+        </a>
+    </li>
+    <li>
+        <a href="@Url.Action("BerriesPriceOver3Sweet", "Search")">
+            Sweet berries with a price over 3 EUR
+        </a>
+    </li>
+    <li>
+        <a href="@Url.Action("OrganicSeedlessCitrus", "Search")">
+            Organic and seedless citrus fruits
         </a>
     </li>
 </ul>

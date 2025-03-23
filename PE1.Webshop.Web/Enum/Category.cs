@@ -2,9 +2,11 @@
 {
     public enum Category
     {
-        Laptops = 1,
-        Desktops = 2,
-        GraphicsCards = 3
+        Citrus = 1,
+        Berries = 2,
+        Tropical = 3,
+        StoneFruits = 4,
+        Pomes = 5
     }
 
     public static class CategoryExtensions
@@ -13,10 +15,12 @@
         {
             return category switch
             {
-                Category.Laptops => "Laptops",
-                Category.Desktops => "Desktops",
-                Category.GraphicsCards => "Graphic cards",
-                _ => "Laptops",
+                Category.Citrus => "Citrus Fruits",
+                Category.Berries => "Berries",
+                Category.Tropical => "Tropical Fruits",
+                Category.StoneFruits => "Stone Fruits",
+                Category.Pomes => "Pome Fruits",
+                _ => "Unknown Category",
             };
         }
     }

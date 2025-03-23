@@ -1,4 +1,5 @@
-﻿using PE1.Webshop.Web.Enum;
+﻿using PE1.Webshop.Web.Entities;
+using PE1.Webshop.Web.Enum;
 
 namespace PE1.Webshop.Web.ViewModels
 {
@@ -9,5 +10,6 @@ namespace PE1.Webshop.Web.ViewModels
         public decimal Price { get; set; }
         public Category Category { get; set; }
         public string ImageUrl { get; set; }
+        public List<Property> Properties { get; set; } 
     }
 }

@@ -7,11 +7,11 @@ namespace PE1.Webshop.Web.Repositories
     {
         private static List<Property> _properties = new List<Property>
         {
-            new Property { Id = 1, Name = "High-End" },
-            new Property { Id = 2, Name = "Budget" },
-            new Property { Id = 3, Name = "Gaming" },
-            new Property { Id = 4, Name = "Family" },
-            new Property { Id = 5, Name = "Student" }
+            new Property { Id = 1, Name = "Organic" },
+            new Property { Id = 2, Name = "Juicy" },
+            new Property { Id = 3, Name = "Seedless" },
+            new Property { Id = 4, Name = "Sweet" },
+            new Property { Id = 5, Name = "Sour" }
         };
 
         public IEnumerable<Property> GetAll()

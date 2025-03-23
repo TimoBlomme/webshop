@@ -9,5 +9,14 @@
 <p>Price: €@Model.Price</p>
 <p>Category: @Model.Category.GetHumanName()</p>
 <img src="@Model.ImageUrl" alt="@Model.Name" width="300" />
+
+<h3>Properties:</h3>
+<ul>
+    @foreach (var property in Model.Properties)
+    {
+        <li>@property.Name</li>
+    }
+</ul>
+
 <p></p>
 <a href="@Url.Action("Index", "Products")">Back to Products</a>

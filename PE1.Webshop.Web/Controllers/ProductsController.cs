@@ -46,7 +46,8 @@ namespace PE1.Webshop.Web.Controllers
                 Name = product.Name,
                 Price = product.Price,
                 ImageUrl = product.ImageUrl,
-                Category = product.Category
+                Category = product.Category,
+                Properties = product.Properties
             };
 
             return View(viewModel);
